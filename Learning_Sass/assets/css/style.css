@@ -11837,9 +11837,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
 .phone-btn-rounded {
   position: relative;
-  padding: 0.9375rem 4rem 0.9375rem 1.2rem;
+  padding: 0.9375rem 4.4rem 0.9375rem 1.2rem;
   font-weight: 500;
   margin: 0;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
@@ -11873,6 +11881,31 @@ textarea.form-control-lg {
   background-color: #312222;
 }
 
+.display-2 {
+  margin-bottom: 1.27rem;
+}
+.display-2--intro {
+  font-weight: 700;
+  display: inline-block;
+  text-transform: capitalize;
+}
+@media (max-width: 575.98px) {
+  .display-2--intro {
+    font-size: 2.5rem;
+  }
+}
+.display-2--description {
+  font-size: 1.3rem;
+  display: block;
+  margin-top: 1.2rem;
+  font-weight: 400;
+}
+@media (max-width: 575.98px) {
+  .display-2--description {
+    font-size: 1rem;
+  }
+}
+
 .menu {
   background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
 }
@@ -11883,6 +11916,40 @@ textarea.form-control-lg {
   color: #fff !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.intro-section {
+  background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  padding-top: 10rem;
+  width: 100%;
+  height: 100%;
+}
+
+.intros .video-box {
+  position: relative;
+}
+.intros .video-box a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  justify-content: center;
+  animation: pulse-border 1s linear infinite;
+}
+@media (max-width: 575.98px) {
+  .intros .video-box a {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+.intros .video-box a span i {
+  font-size: 6rem;
+  color: #00a0f6;
 }
 
 /*# sourceMappingURL=style.css.map */

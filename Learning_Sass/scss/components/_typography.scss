@@ -1,0 +1,29 @@
+@use '../custom' as *;
+
+.display-2{
+    margin-bottom: 1.27rem;
+
+
+    &--intro{
+        font-weight: 700;
+        display: inline-block;
+        text-transform: capitalize;
+        
+        @include media-breakpoint-down(sm){
+            font-size: 2.5rem;
+        }
+    }
+    
+    
+    &--description{
+        font-size: 1.3rem;
+        display: block;
+        margin-top: 1.2rem;
+        font-weight: 400;
+
+        @include media-breakpoint-down(sm){
+            font-size: 1rem;
+        }
+    }
+}
+
