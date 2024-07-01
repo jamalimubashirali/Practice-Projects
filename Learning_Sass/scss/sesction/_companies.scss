@@ -1,0 +1,35 @@
+.heading{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading-line-1{
+        padding-inline: 80px;
+        padding-block: 2.5px;  
+    }
+
+    .heading-line-2{
+        padding-inline: 15px;
+        padding-block: 4px;    
+    }
+}
+
+
+.images{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img{
+        width: 200px;
+
+        
+        &:hover{
+            filter: grayscale(120);
+        }
+    }
+}
+

@@ -1,0 +1,53 @@
+@use "../custom" as *;
+@use "../components/mix-in" as *;
+
+.Services{
+
+    .col-md-6
+    {
+
+        .display-5{
+            text-transform: capitalize;
+        }
+        
+        .service-heading{
+            color: $secondary;
+           
+        }
+
+        .services-description{
+            line-height: 30px;
+        }
+
+        .icon{
+            margin-top: 5rem;
+            font-size: 3rem;
+            color: $secondary;
+            @include media-breakpoint-down(md){
+                margin-top: 0;
+            }
+        }
+
+        .image{
+            img{
+                @include media-breakpoint-only(md){
+                    margin-top: 50px;
+                } 
+            }
+        }
+
+        
+    }
+}
+
+.Services-des{
+    line-height: 30px;
+    border-left: 1px solid $gray-300;
+}
+
+
+.web-section{
+    @include media-breakpoint-down(sm){
+        flex-direction: column-reverse;
+    }
+}

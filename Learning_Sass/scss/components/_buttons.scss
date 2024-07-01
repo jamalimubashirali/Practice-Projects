@@ -13,7 +13,7 @@
 
     span{
         position:absolute;
-        background-color:$primary;
+        @include gradient;
         width: 2.5rem;
         height:2.5rem;
         font-weight:600;
