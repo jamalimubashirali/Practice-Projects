@@ -11987,11 +11987,31 @@ textarea.form-control-lg {
   color: #00a0f6;
 }
 
+.testimonials {
+  background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  position: relative;
+}
+.testimonials .container .row .display-3 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.testimonials .container .row hr {
+  max-width: 150px;
+  height: 10px;
+  padding: 10px;
+  margin-inline: auto;
+}
+.testimonials .container .row .testimonial-tag-line {
+  font-size: 1.3rem;
+}
+
 .Services .col-md-6 .display-5 {
   text-transform: capitalize;
 }
 .Services .col-md-6 .service-heading {
-  color: #00a0f6;
+  background-image: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .Services .col-md-6 .services-description {
   line-height: 30px;
@@ -11999,7 +12019,9 @@ textarea.form-control-lg {
 .Services .col-md-6 .icon {
   margin-top: 5rem;
   font-size: 3rem;
-  color: #00a0f6;
+  background-image: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 767.98px) {
   .Services .col-md-6 .icon {
@@ -12018,6 +12040,11 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 575.98px) {
+  .web-section {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767.98px) {
   .web-section {
     flex-direction: column-reverse;
   }

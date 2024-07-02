@@ -1,0 +1,29 @@
+@use '../custom' as *;
+@use '../components/mix-in' as *;
+
+.testimonials{
+    @include gradient;
+    position: relative;
+
+    .container{
+
+        .row{
+
+            .display-3{
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            hr{
+                max-width: 150px;
+                height: 10px;
+                padding: 10px;
+                margin-inline: auto;
+            }
+
+            .testimonial-tag-line{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

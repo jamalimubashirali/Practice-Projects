@@ -11,7 +11,9 @@
         }
         
         .service-heading{
-            color: $secondary;
+            background-image: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
            
         }
 
@@ -22,7 +24,9 @@
         .icon{
             margin-top: 5rem;
             font-size: 3rem;
-            color: $secondary;
+            background-image: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             @include media-breakpoint-down(md){
                 margin-top: 0;
             }
@@ -48,6 +52,10 @@
 
 .web-section{
     @include media-breakpoint-down(sm){
+        flex-direction: column-reverse;
+    }
+
+    @include media-breakpoint-down(md){
         flex-direction: column-reverse;
     }
 }
