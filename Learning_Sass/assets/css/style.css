@@ -11953,6 +11953,115 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 
+.footer {
+  padding-top: 1rem;
+  background-color: #212529;
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 2rem;
+  stroke: #0d6efd;
+  padding-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 4rem;
+  }
+}
+.contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contact-box__info--title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--title {
+    font-size: 1.4rem;
+  }
+}
+.contact-box__info--subtitle {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  .contact-box__info--subtitle {
+    font-size: 1rem;
+  }
+}
+
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 1.6rem;
+  }
+}
+.footer-sm a:hover {
+  color: #0d6efd;
+}
+
+.campany-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.campany-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.campany-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.campany-list li a:hover {
+  color: #0d6efd;
+}
+
+.footer-bottom {
+  background-color: #000;
+}
+.footer-bottom__copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom__copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom__copyright a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .faqs .container .row .heading-line-1 {
   padding-inline: 80px;
   padding-block: 2.5px;
@@ -11960,6 +12069,37 @@ textarea.form-control-lg {
 .faqs .container .row .heading-line-2 {
   padding-inline: 15px;
   padding-block: 4px;
+}
+
+.get-started {
+  background-color: #e9ecef;
+}
+
+.contact-info {
+  background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.contact-info li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.form {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.form .row h4 {
+  background-image: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form button {
+  background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  color: white;
+  font-size: 1.1rem;
 }
 
 .intro-section {
@@ -11996,6 +12136,36 @@ textarea.form-control-lg {
 .intros .video-box a span i {
   font-size: 6rem;
   color: #00a0f6;
+}
+
+.img-box {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.img-box .caption {
+  position: absolute;
+  background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.img-box .caption .info {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.img-box:hover .caption {
+  opacity: 0.8;
+  visibility: visible;
+  transition-duration: 1500ms;
+  transition-property: all;
 }
 
 .testimonials {

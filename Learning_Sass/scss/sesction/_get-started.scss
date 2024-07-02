@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../components/mix-in' as *;
+
+.get-started{
+    background-color: $gray-200;
+}
+
+
+.contact-info{
+    @include gradient;
+    color: $white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    li{
+        list-style: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+}
+
+.form{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .row{
+
+        h4{
+            background-image: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    button{
+        @include gradient;
+        color: white;
+        font-size: 1.1rem;
+    }
+}
