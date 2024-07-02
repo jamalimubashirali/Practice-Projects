@@ -171,19 +171,19 @@
             <h1 class="display-5 fw-bold">
               Testimonials
             </h1>
-            <hr>
+            <hr class="text-white">
             <p class="testimonial-tag-line">
               What our clients say about us!
             </p>
           </div>
-          <div class="row align-items-center">
+          <div class="row align-items-center c">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="testimonials__card">
-                    <p class="lh-lg">
+                  <div class="testimonials-card">
+                    <p class="lh-lg text-center">
                       <i class="fas fa-quote-left"></i>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus quod reiciendis iste quisquam! Nulla eos enim excepturi eius perferendis incidunt, eveniet nobis debitis pariatur nemo voluptatibus alias.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi quae ad ex eveniet corrupti facilis, ab, at possimus impedit voluptatibus laborum hic nemo quos adipisci eaque recusandae incidunt velit tempore aut. Aut, eos eaque!
                       <i class="fas fa-quote-right"></i>
                       <div class="rating">
                         <i class="fas fa-star"></i>
@@ -194,16 +194,16 @@
                       </div>
                     </p>
                   </div>
-                  <div class="testimonials__pic">
+                  <div class="testimonials-pic">
                     <img src="../Learning_Sass/images/undraw_website_u6x8.svg" alt="client-name" class="img-fluid">
                   </div>
-                  <div class="testimonial__name">
-                    <h3>John Doe</h3>
+                  <div class="testimonials-name">
+                    <h3 class="display-5 fw-bold-300">John Doe</h3>
                     <p class="fw-light">CEO & Founder</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="testimonials__card">
+                  <div class="testimonials-card">
                     <p class="lh-lg">
                       <i class="fas fa-quote-left"></i>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus quod reiciendis iste quisquam! Nulla eos enim excepturi eius perferendis incidunt, eveniet nobis debitis pariatur nemo voluptatibus alias.
@@ -217,16 +217,16 @@
                       </div>
                     </p>
                   </div>
-                  <div class="testimonials__pic">
+                  <div class="testimonials-pic">
                     <img src="../Learning_Sass/images/undraw_website_u6x8.svg" alt="client-name" class="img-fluid">
                   </div>
-                  <div class="testimonial__name">
-                    <h3>Kilyan Mbapee</h3>
+                  <div class="testimonials-name">
+                    <h3 class="display-5 fw-bold-300">Kilyan Mbapee</h3>
                     <p class="fw-light">Product Manger</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="testimonials__card">
+                  <div class="testimonials-card">
                     <p class="lh-lg">
                       <i class="fas fa-quote-left"></i>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus quod reiciendis iste quisquam! Nulla eos enim excepturi eius perferendis incidunt, eveniet nobis debitis pariatur nemo voluptatibus alias.
@@ -240,16 +240,16 @@
                       </div>
                     </p>
                   </div>
-                  <div class="testimonials__pic">
+                  <div class="testimonials-pic">
                     <img src="../Learning_Sass/images/undraw_website_u6x8.svg" alt="client-name" class="img-fluid">
                   </div>
-                  <div class="testimonial__name">
-                    <h3>Nico Williams</h3>
+                  <div class="testimonials-name">
+                    <h3 class="display-5 fw-bold-300">Nico Williams</h3>
                     <p class="fw-light">Financial Manager</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="testimonials__card">
+                  <div class="testimonials-card">
                     <p class="lh-lg">
                       <i class="fas fa-quote-left"></i>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus quod reiciendis iste quisquam! Nulla eos enim excepturi eius perferendis incidunt, eveniet nobis debitis pariatur nemo voluptatibus alias.
@@ -263,29 +263,93 @@
                       </div>
                     </p>
                   </div>
-                  <div class="testimonials__pic">
+                  <div class="testimonials-pic">
                     <img src="../Learning_Sass/images/undraw_website_u6x8.svg" alt="client-name" class="img-fluid">
                   </div>
-                  <div class="testimonial__name">
-                    <h3>Jude Ballingham </h3>
+                  <div class="testimonials-name">
+                    <h3 class="display-5 fw-bold-300">Jude Ballingham </h3>
                     <p class="fw-light">Hiring Manager</p>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="text-center">
+                <button class="btn btn-outline-light fas fa-long-arrow-alt-left p-3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                </button>
+                <button class="btn btn-outline-light fas fa-long-arrow-alt-right p-3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">  
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,32L48,80C96,128,192,224,288,245.3C384,267,480,213,576,181.3C672,149,768,139,864,154.7C960,171,1056,213,1152,213.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       </section>
     
+      <section class="faqs">
+        <div class="container">
+          <div class="row text-center">
+            <div class="row">
+              <div class="heading col-lg-12">
+                <h1 class="text-center display-5 fw-bold">FAQ's?</h1>
+                <span class="heading-line-1 d-block text-center m-0 bg-secondary"></span>
+                <span class="heading-line-2 d-block text-center bg-secondary"></span>
+              </div>
+              <p class="lead text-center mt-4" style="font-size: 1.2rem; font-weight: 400;">Frequently Asked Questions, See before you work!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item shadow mt-4" >
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Question 1?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos vero voluptatum libero, aliquam illo accusamus labore aliquid aperiam inventore numquam minima repudiandae excepturi consequuntur molestiae ullam nesciunt. Ipsam velit officiis accusantium repellendus, perferendis qui porro cumque nulla debitis. Esse.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mt-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Question 2?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At a asperiores quas cupiditate dolores, temporibus deserunt soluta quos! Nobis, dolor saepe et debitis eum asperiores architecto magnam provident accusamus nesciunt iure qui vel neque delectus libero est, praesentium inventore quod.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mt-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Question 3?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur veniam modi nam doloremque, optio voluptas consequuntur eligendi ab suscipit cumque accusamus possimus aut sequi minus perspiciatis praesentium id nemo? Aliquid inventore in ea at accusantium ullam sit aliquam repellendus?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mt-4">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Question 4?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem architecto voluptatibus, id modi laboriosam iusto cupiditate dolores reiciendis! Modi, possimus. Ullam sunt ipsam nemo tempora error. Voluptatum aperiam officia debitis saepe sapiente modi incidunt, non aspernatur ad eaque id!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

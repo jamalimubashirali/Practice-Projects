@@ -4478,18 +4478,18 @@ textarea.form-control-lg {
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-  --bs-accordion-btn-padding-x: 1.25rem;
-  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-padding-x: 1.4rem;
+  --bs-accordion-btn-padding-y: 1.4rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%230d6efd' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3e%3cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3e%3c/svg%3e");
-  --bs-accordion-btn-icon-width: 1.875rem;
+  --bs-accordion-btn-icon-width: 2rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2300a0f6' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3e  %3cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-  --bs-accordion-body-padding-x: 1.25rem;
-  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-body-padding-x: 1.4rem;
+  --bs-accordion-body-padding-y: 1.4rem;
   --bs-accordion-active-color: var(--bs-primary-text-emphasis);
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
 }
@@ -11840,9 +11840,11 @@ textarea.form-control-lg {
 @keyframes pulse-border {
   0% {
     transform: scale(1);
+    opacity: 0;
   }
   100% {
     transform: scale(1.25);
+    opacity: 1;
   }
 }
 .phone-btn-rounded {
@@ -11911,7 +11913,7 @@ textarea.form-control-lg {
 }
 
 .heading {
-  margin-top: 10rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11927,7 +11929,7 @@ textarea.form-control-lg {
 }
 
 .images {
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -11949,6 +11951,15 @@ textarea.form-control-lg {
   color: #fff !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.faqs .container .row .heading-line-1 {
+  padding-inline: 80px;
+  padding-block: 2.5px;
+}
+.faqs .container .row .heading-line-2 {
+  padding-inline: 15px;
+  padding-block: 4px;
 }
 
 .intro-section {
@@ -11990,6 +12001,9 @@ textarea.form-control-lg {
 .testimonials {
   background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
   position: relative;
+  overflow-y: hidden;
+  padding: 0%;
+  margin: 0%;
 }
 .testimonials .container .row .display-3 {
   font-weight: 600;
@@ -12003,6 +12017,53 @@ textarea.form-control-lg {
 }
 .testimonials .container .row .testimonial-tag-line {
   font-size: 1.3rem;
+}
+
+.testimonials-card {
+  margin-inline: 20px;
+  margin-block: 20px;
+  padding: 60px;
+  background-color: rgba(214, 224, 224, 0.829);
+  color: #212529;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.testimonials-card i {
+  font-size: 2rem;
+  background-image: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimonials-card .rating {
+  text-align: center;
+  margin-top: 5px;
+}
+.testimonials-card .rating i {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+
+.testimonials-pic img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  background: linear-gradient(to right, rgba(13, 110, 253, 0.95), rgba(0, 160, 246, 0.95));
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.testimonials-name {
+  margin-top: 100px;
+  text-align: center;
+}
+.testimonials-name .display-5 {
+  font-size: 2rem;
+}
+.testimonials-name p {
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .Services .col-md-6 .display-5 {

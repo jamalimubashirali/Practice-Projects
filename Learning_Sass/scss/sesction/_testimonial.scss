@@ -4,7 +4,9 @@
 .testimonials{
     @include gradient;
     position: relative;
-
+    overflow-y: hidden;
+    padding: 0%;
+    margin: 0%;
     .container{
 
         .row{
@@ -25,5 +27,62 @@
                 font-size: 1.3rem;
             }
         }
+    }
+
+}
+
+
+.testimonials-card{
+    margin-inline: 20px;
+    margin-block: 20px;
+    padding: 60px;
+    background-color: rgba(214, 224, 224, 0.829);
+    color: $gray-900;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    i{
+        font-size: 2rem;
+        background-image: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    
+    .rating{
+        text-align: center;
+        margin-top: 5px;
+
+        i{
+            padding-top: 20px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.testimonials-pic{
+
+    img{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-60%);
+        @include gradient;
+        padding: 20px;
+        border-radius: 50%;
+    }
+}
+
+.testimonials-name{
+    margin-top: 100px;
+    text-align: center;
+
+    .display-5{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+        font-weight: 300;
     }
 }
